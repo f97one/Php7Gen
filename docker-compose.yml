@@ -23,10 +23,11 @@ services:
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/log:/var/log/nginx
-      - ./php/src:/var/www/html
     depends_on:
       - php7
 
   # PHP 7.4 fpm
   php7:
     build: ./php/
+    volumes:
+    - ./php/src:/var/www/html

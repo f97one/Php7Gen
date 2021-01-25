@@ -17,7 +17,7 @@ services:
 
   # nginx
   nginx:
-    image: nginx:stable
+    build: ./nginx/
     ports:
       - '${NGINX_HOST_PORT_80}:80'
     volumes:

@@ -1,6 +1,6 @@
 FROM php:7.4-fpm
 
-COPY ./php/php.ini /etc/php/php.ini
+COPY ./php.ini /etc/php/php.ini
 
 RUN apt-get update \
     && apt-get install -y \

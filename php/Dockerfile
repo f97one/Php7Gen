@@ -12,3 +12,5 @@ RUN apt-get update \
     && docker-php-ext-install -j$(nproc) gd \
     && pecl install xdebug-2.8.1 \
     && docker-php-ext-enable xdebug
+
+RUN docker-php-ext-install pdo_mysql && docker-php-ext-enable pdo_mysql

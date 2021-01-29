@@ -3,3 +3,9 @@ mysql/data/*
 
 nginx/log/*
 !nginx/log/.gitkeep
+
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
